@@ -10,3 +10,9 @@ select e.fname, e.minit, e.lname , d.dname
 from employee e join department d
 on e.dno = d.dnumber
 where d.dname in ('Hardware','Research');
+
+
+use dreamhome;
+select fname, city as branch_city
+from staff s join branch b
+on s.branchNo = b.branchNo;
